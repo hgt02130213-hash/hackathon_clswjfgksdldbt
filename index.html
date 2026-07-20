@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>당신의 친절한 이웃 — 강원도 마을 응급대응 네트워크</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6.3 5.4 5.4 0 0 1 21.3 12C19 16.4 12 21 12 21Z" fill="#fff"/><path d="M8 12h2.2l1-2.4 1.6 4.4 1-2h2.2" stroke="#1F4A38" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    당신의 친절한 이웃
+  </a>
+  <nav>
+    <a href="index.html" class="on">서비스 소개</a>
+    <a href="demo.html">시연 (관제 데모)</a>
+    <a href="aed.html">AED 사용 설명서</a>
+  </nav>
+  <a class="nav-cta" href="demo.html">응급상황 시연 시작</a>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">강원특별자치도 · 응급의료 취약지 해커톤 프로젝트</span>
+      <h1>구급차보다<br>가까운 사람이<br>있습니다.</h1>
+      <p class="lead">
+        강원도의 상당수 시·군은 30분 안에 응급의료센터에 닿을 수 없는 의료 취약지입니다.
+        <b>당신의 친절한 이웃</b>은 응급안전안심서비스의 자동 감지·신고와
+        마을회관 AED 드론, 그리고 친절한 이웃을 하나로 이어
+        구급차가 오기 전 골든타임을 지킵니다.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-alert" href="demo.html"> 시나리오 시연 보기</a>
+        <a class="btn btn-outline" href="aed.html">AED 사용법 배우기</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>4분</b><span>심정지 골든타임</span></div>
+        <div><b>45초</b><span>드론 AED 도착</span></div>
+        <div><b>vs 17분</b><span>산간 구급차 평균</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 460 400" fill="none" aria-label="드론이 마을로 AED를 배송하는 그림">
+        <path d="M0 210 90 110l70 75 60-95 95 130H0z" fill="#B9CFB2"/>
+        <path d="M220 208 320 90l75 88 45-52 20 24v58H220z" fill="#A8C2A0"/>
+        <rect y="220" width="460" height="180" fill="#DEE9DA"/>
+        <path d="M-10 340c70-26 110 12 180-6s130-44 200-30 70 4 100-4" stroke="#AECBE0" stroke-width="18" fill="none" stroke-linecap="round" opacity=".85"/>
+        <path d="M30 400 70 300c14-34 40-52 84-60l90-16" stroke="#fff" stroke-width="18" fill="none" stroke-linecap="round"/>
+        <path d="M30 400 70 300c14-34 40-52 84-60l90-16" stroke="#E7DFCB" stroke-width="12" fill="none" stroke-linecap="round"/>
+        <g transform="translate(120 258)"><rect x="-16" y="0" width="32" height="22" fill="#F5EFE2"/><path d="M-21 0 0-17 21 0z" fill="#8C6E54"/></g>
+        <g transform="translate(210 300)"><rect x="-16" y="0" width="32" height="22" fill="#F5EFE2"/><path d="M-21 0 0-17 21 0z" fill="#8C6E54"/></g>
+        <g transform="translate(360 280)">
+          <circle r="40" fill="#D63B2F" opacity=".12"><animate attributeName="r" values="30;48;30" dur="2s" repeatCount="indefinite"/></circle>
+          <rect x="-20" y="-2" width="40" height="28" fill="#FBEFE9"/><path d="M-27-2 0-24 27-2z" fill="#C24A38"/>
+          <rect x="-6" y="12" width="12" height="14" fill="#8C6E54"/>
+        </g>
+        <g id="heroDrone">
+          <animateMotion dur="7s" repeatCount="indefinite" path="M110 120 C 200 40, 300 80, 350 210"/>
+          <rect x="-16" y="-7" width="32" height="14" rx="5" fill="#2E6FB4"/>
+          <path d="M-16-4l-14-10M16-4l14-10M-16 4l-14 10M16 4l14 10" stroke="#2E6FB4" stroke-width="4" stroke-linecap="round"/>
+          <g fill="#8FB3D9">
+            <ellipse cx="-32" cy="-15" rx="11" ry="3.6"><animateTransform attributeName="transform" type="rotate" from="0 -32 -15" to="360 -32 -15" dur=".25s" repeatCount="indefinite"/></ellipse>
+            <ellipse cx="32" cy="-15" rx="11" ry="3.6"><animateTransform attributeName="transform" type="rotate" from="0 32 -15" to="360 32 -15" dur=".25s" repeatCount="indefinite"/></ellipse>
+            <ellipse cx="-32" cy="15" rx="11" ry="3.6"><animateTransform attributeName="transform" type="rotate" from="0 -32 15" to="360 -32 15" dur=".25s" repeatCount="indefinite"/></ellipse>
+            <ellipse cx="32" cy="15" rx="11" ry="3.6"><animateTransform attributeName="transform" type="rotate" from="0 32 15" to="360 32 15" dur=".25s" repeatCount="indefinite"/></ellipse>
+          </g>
+          <rect x="-9" y="8" width="18" height="15" rx="3" fill="#D63B2F"/>
+          <path d="M-4.5 15.5h9M0 11v9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 문제 정의 ================= -->
+<section class="section section-dark" id="problem">
+  <div class="container">
+    <span class="eyebrow light">왜 필요한가</span>
+    <h2>병원은 멀고, 이웃은 가깝습니다</h2>
+    <div class="grid-3">
+      <div class="dark-card">
+        <b class="big">30분+</b>
+        <h3>응급의료센터까지의 거리</h3>
+        <p>강원도 다수의 시·군이 30분 내 권역응급의료센터 접근이 불가능한 의료 취약지로 분류됩니다. 산악 지형과 낮은 인구밀도 탓에 병원을 늘리는 방식으로는 해결이 어렵습니다.</p>
+      </div>
+      <div class="dark-card">
+        <b class="big">1인 가구</b>
+        <h3>혼자 계신 어르신</h3>
+        <p>초고령화가 가장 빠른 강원도에서는 심정지·낙상이 일어나도 <u>신고할 사람조차 없는</u> 독거 가구가 많습니다. 발견 지연이 곧 사망으로 이어집니다.</p>
+      </div>
+      <div class="dark-card">
+        <b class="big">4분</b>
+        <h3>심정지 골든타임</h3>
+        <p>심정지 후 4분 안에 CPR·AED가 시작되면 생존율이 크게 오르지만, 1분 지연될 때마다 생존율은 7~10%씩 떨어집니다. 구급차가 도착하는 10~20분은 너무 깁니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 작동 방식 ================= -->
+<section class="section" id="how">
+  <div class="container">
+    <span class="eyebrow">작동 방식</span>
+    <h2>센서가 신고하고, 드론이 나르고, 이웃이 살립니다</h2>
+    <p class="section-lead">
+      기존 인프라인 보건복지부 <b>독거노인·장애인 응급안전안심서비스</b>(화재감지기·응급호출기·레이더 활동량 감지기)를
+      그대로 활용하기 때문에, 어르신은 아무것도 새로 배우거나 조작할 필요가 없습니다.
+    </p>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <h3>자동 감지 · 119 신고</h3>
+        <p>댁내 레이더 센서가 심박·호흡 신호 소실이나 장시간 쓰러짐을 감지하면 응급안전안심서비스가 <b>119에 자동 신고</b>합니다. 어르신이 버튼을 누르지 못해도 작동합니다.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <h3>AED 드론 출동</h3>
+        <p>신고와 동시에 <b>마을회관 옥상 드론 스테이션</b>에서 AED를 실은 드론이 등록된 환자 댁 좌표로 자동 비행해 문 앞에 AED를 내려놓습니다.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <h3>이웃 친절한 이웃 호출</h3>
+        <p>같은 시각, 반경 2km 안의 <b>CPR 교육 이수 이웃</b>(이장·청년회·자율방범대)의 휴대폰이 울립니다. 가장 가까운 한 명이 출동을 수락합니다.</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <h3>골든타임 응급처치</h3>
+        <p>도착한 이웃은 앱의 <b>단계별 AED 안내</b>와 CPR 박자기를 따라 구급차가 올 때까지 처치합니다. 모든 상황은 119 상황실과 실시간 공유됩니다.</p>
+      </div>
+    </div>
+    <div class="center">
+      <a class="btn btn-alert btn-lg" href="demo.html">이 흐름을 관제 화면으로 시연하기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 기반 서비스 ================= -->
+<section class="section section-mint" id="base">
+  <div class="container">
+    <span class="eyebrow">연계 인프라</span>
+    <h2>응급안전안심서비스 위에 짓습니다</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-ic" style="background:#FBE3E0;">🔥</div>
+        <h3>화재 감지</h3>
+        <p>댁내 화재 시 화재감지기가 감지해 119에 곧바로 신고합니다.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic" style="background:#E2ECF8;">🆘</div>
+        <h3>응급 호출</h3>
+        <p>화장실·침실의 응급호출기 버튼 또는 음성으로 간편하게 119 신고가 가능합니다.</p>
+      </div>
+      <div class="card">
+        <div class="card-ic" style="background:#E4EFE7;">📡</div>
+        <h3>활동량 감지</h3>
+        <p>레이더 센서가 움직임·심박·호흡을 측정해 쓰러짐이나 의식 소실을 감지, 응급관리요원에게 알립니다. <b>우리 서비스는 이 신호를 마을 단위 초동 대응으로 확장합니다.</b></p>
+      </div>
+    </div>
+    <p class="fineprint">
+      ※ 응급안전안심서비스: 독거노인·고령 부부·조손 가구 및 상시 보호가 필요한 장애인 가정에 ICT 장비를 설치해 응급상황을 감지·신고하는 보건복지부 서비스.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <b>당신의 친절한 이웃</b>
+      <p>강원도 고령층 응급상황 마을 대응 네트워크 · 해커톤 프로토타입</p>
+    </div>
+    <nav>
+      <a href="demo.html">시연</a>
+      <a href="aed.html">AED 설명서</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
